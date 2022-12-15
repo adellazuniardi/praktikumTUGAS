@@ -26,16 +26,22 @@ public class ProductServiceController {
       product honey = new product();
       honey.setId("1");
       honey.setName("Honey");
+      honey.setQuantity("5");
+      honey.setPrice("Rp. 50.000");
       productRepo.put(honey.getId(), honey);
       
       product almond = new product();
       almond.setId("2");
       almond.setName("Almond");
+      almond.setQuantity("4");
+      almond.setPrice("Rp. 25.000");
       productRepo.put(almond.getId(), almond);
       
       product peanut = new product();
       peanut.setId("3");
       peanut.setName("Peanut");
+      peanut.setQuantity("6");
+      peanut.setPrice("Rp. 15.000");
       productRepo.put(peanut.getId(), peanut);
     }
     @RequestMapping(value = "/product/{id}", method = RequestMethod.DELETE)
